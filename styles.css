@@ -59,16 +59,18 @@ nav ul li span {
 }
 
 input {
-  z-index: 1000;
-  /* position: sticky;
-  top: 3.2rem; */
+  position: sticky;
+  top: 3.6rem;
   display: none;
   width: 100%;
   padding: 1rem;
   color: inherit;
   border: none;
   outline: none;
-  background-color: #474747;
+  background-color: rgba(71, 71, 71, 0.7);
+  margin-top: 3.6rem;
+  border-bottom: 2px solid black;
+  backdrop-filter: blur(5px);
 }
 
 input::placeholder {
@@ -179,8 +181,9 @@ img {
   flex-direction: column;
   width: 100%;
   border: 1px solid dimgray;
-  z-index: 100;
+  z-index: 10000;
   display: none;
+  border-top: none;
 }
 
 .filteredProductsHolder {
@@ -226,6 +229,11 @@ img {
   img {
     width: 5.8rem;
     height: 5.8rem;
+  }
+
+  input {
+    top: 5.25rem;
+    margin-top: 5.25rem;
   }
 
   nav ul li span {

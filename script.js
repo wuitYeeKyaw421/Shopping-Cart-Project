@@ -178,6 +178,7 @@ searchTag.addEventListener("click", () => {
 });
 
 closeTag.addEventListener("click", () => {
+  location.reload();
   showFilteredProductsTag.style.display = "none";
   closeInputXFilterContainer();
   if (homeTag.classList.contains("active")) {
